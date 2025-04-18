@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: SpringJPQL
+  datasource:
+    url: jdbc:mysql://localhost:3306/expert
+    username: root
+    password: G7m$X9p!qT2dR
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        use_sql_comments: true
+        dialect: org.hibernate.dialect.MySQLDialect
+
+jwt:
+  secret:
+    key: da05ca14d32e0d1b97b4facee8de69891ee0d2f96bb1042b0560c2a63ef30a7485407095da78ce108dbd24dc59d58130cb1444439e7578e56522f8eb6259cc58
