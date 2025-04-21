@@ -20,15 +20,6 @@ public class AdminInterceptor implements HandlerInterceptor {
             throw new AccessDeniedException("관리자만 접근할 수 있습니다.");
         }
 
-        String username = (String) request.getSession().getAttribute("username"); // 세션에 저장된 사용자명
-        String ip = request.getRemoteAddr();
-        LocalDateTime now = LocalDateTime.now();
-        String url = request.getRequestURL().toString();
-        String query = request.getQueryString();
-        String fullUrl = (query != null) ? url + "?" + query : url;
-
-        log.info("관리자 접속 - 사용자명: {}, IP: {}, 시간: {}, URL: {}", username, ip, now, fullUrl);
-
         return HandlerInterceptor.super.preHandle(request, response, handler);
     }
 }
