@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: SpringJPQL
+  datasource:
+    url: jdbc:mysql://localhost:3306/expert
+    username: {사용자}
+    password: {비밀번호}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        use_sql_comments: true
+        dialect: org.hibernate.dialect.MySQLDialect
+
+jwt:
+  secret:
+    key: {SHA-256}
