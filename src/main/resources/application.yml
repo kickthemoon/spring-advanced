@@ -3,8 +3,8 @@ spring:
     name: SpringJPQL
   datasource:
     url: jdbc:mysql://localhost:3306/expert
-    username: root
-    password: G7m$X9p!qT2dR
+    username: {사용자}
+    password: {비밀번호}
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
@@ -19,4 +19,4 @@ spring:
 
 jwt:
   secret:
-    key: 84F7DD9498B5789361C296F02640B59FA35FE6B2C072177876FA98DA236C533C
+    key: {SHA-256}
